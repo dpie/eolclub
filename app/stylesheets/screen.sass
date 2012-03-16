@@ -50,18 +50,15 @@ header
 // ----------------------------------------------------------------------- //
 
 section#main
-  a
-    display: block
-    color: $dark_font_color
-    text-decoration: none
-    p
-      padding: 0
-      margin-bottom: 14px
-      +font_styles(18px, 24px, $dark_font_color, 300)
-      span
-        border-bottom: #777 1px dotted
-    &:hover p span, &:active p span
-      color: $light_font_color
+  p
+    margin-bottom: 14px
+    +font_styles(18px, 24px, $dark_font_color, 300)
+    a
+      border-bottom: #777 1px dotted
+      text-decoration: none
+      color: $dark_font_color
+      &:hover, &:active
+        color: $light_font_color
 
 
 // ----------------------------------------------------------------------- //
@@ -79,7 +76,9 @@ section#main
       line-height: 80px
 
   section#main
-    a
-      color: #eee
-      p
-        +font_styles(16px, 20px, #eee)
+    p
+      +font_styles(16px, 20px, $light_font_color)
+      a
+        color: $light_font_color
+        &:hover, &:active
+          color: $light_font_color

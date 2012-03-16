@@ -72,23 +72,19 @@ header h1 {
   text-shadow: 3px 3px #252525;
 }
 
-section#main a {
-  display: block;
-  color: #bbbbbb;
-  text-decoration: none;
-}
-section#main a p {
-  padding: 0;
+section#main p {
   margin-bottom: 14px;
   font-size: 18px;
   line-height: 24px;
   color: #bbbbbb;
   font-weight: 300;
 }
-section#main a p span {
+section#main p a {
   border-bottom: #777777 1px dotted;
+  text-decoration: none;
+  color: #bbbbbb;
 }
-section#main a:hover p span, section#main a:active p span {
+section#main p a:hover, section#main p a:active {
   color: white;
 }
 
@@ -103,12 +99,15 @@ section#main a:hover p span, section#main a:active p span {
     line-height: 80px;
   }
 
-  section#main a {
-    color: #eeeeee;
-  }
-  section#main a p {
+  section#main p {
     font-size: 16px;
     line-height: 20px;
-    color: #eeeeee;
+    color: white;
+  }
+  section#main p a {
+    color: white;
+  }
+  section#main p a:hover, section#main p a:active {
+    color: white;
   }
 }
