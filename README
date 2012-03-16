@@ -13,3 +13,8 @@ with other local developers to a backdrop of electronic music.
 == Convert Sass to CSS
 
 $ sass --watch app/stylesheets:public/stylesheets --style expanded
+
+
+== Commit to GitHub Pages
+
+git push origin master:gh-pages
