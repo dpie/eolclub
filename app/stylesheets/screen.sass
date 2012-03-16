@@ -40,12 +40,9 @@ header
   h1
     padding: 0
     margin: 50px 0 70px 0
-    font-size: 144px
-    line-height: 120px
-    font-weight: 900
+    +font_styles(144px, 120px, $light_font_color, 900)
     text-transform: uppercase
     text-shadow: 3px 3px #252525
-    color: $light_font_color
 
 
 // ----------------------------------------------------------------------- //
@@ -59,11 +56,8 @@ section#main
     text-decoration: none
     p
       padding: 0
-      margin: 0 0 14px 0
-      font-size: 18px
-      line-height: 24px
-      font-weight: 300
-      color: $dark_font_color
+      margin-bottom: 14px
+      +font_styles(18px, 24px, $dark_font_color, 300)
       span
         border-bottom: #777 1px dotted
     &:hover p span, &:active p span
@@ -85,8 +79,7 @@ section#main
       line-height: 80px
 
   section#main
-    a, a p
+    a
       color: #eee
-    a p
-      font-size: 16px
-      line-height: 20px
+      p
+        +font_styles(16px, 20px, #eee)
