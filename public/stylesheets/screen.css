@@ -52,8 +52,8 @@ body {
   margin: 0;
   width: auto;
   background-color: #151515;
-  font-weight: 300;
   font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 #container {
@@ -63,7 +63,6 @@ body {
 }
 
 header h1 {
-  padding: 0;
   margin: 50px 0 70px 0;
   font-size: 144px;
   line-height: 120px;
@@ -74,7 +73,7 @@ header h1 {
 }
 
 section#main p {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 24px;
   color: #bbbbbb;
@@ -104,10 +103,7 @@ section#main p a:hover, section#main p a:active {
     line-height: 20px;
     color: white;
   }
-  section#main p a {
-    color: white;
-  }
-  section#main p a:hover, section#main p a:active {
+  section#main p a, section#main p a:hover, section#main p a:active {
     color: white;
   }
 }

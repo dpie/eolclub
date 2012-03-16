@@ -24,8 +24,8 @@ body
   margin: 0
   width: auto
   background-color: #151515
-  font-weight: 300
   font-family: $font_family
+  font-weight: 300
 
 #container
   padding: 19px 20px
@@ -39,7 +39,6 @@ body
 
 header
   h1
-    padding: 0
     margin: 50px 0 70px 0
     +font_styles(144px, 120px, $light_font_color, 900)
     text-transform: uppercase
@@ -52,7 +51,7 @@ header
 
 section#main
   p
-    margin-bottom: 14px
+    margin-bottom: 16px
     +font_styles(18px, 24px, $dark_font_color)
     a
       border-bottom: #777 1px dotted
@@ -73,13 +72,10 @@ section#main
   header
     h1
       margin: 0 0 50px 0
-      font-size: 96px
-      line-height: 80px
+      +font_styles(96px, 80px)
 
   section#main
     p
       +font_styles(16px, 20px, $light_font_color)
-      a
+      a, a:hover, a:active
         color: $light_font_color
-        &:hover, &:active
-          color: $light_font_color
