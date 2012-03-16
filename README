@@ -2,3 +2,8 @@
 
 Monthly Providence, RI hacknight. Code, design, and collaborate with other
 local developers.
+
+
+== Convert Sass to CSS
+
+$ sass --watch app/stylesheets:public/stylesheets --style expanded
