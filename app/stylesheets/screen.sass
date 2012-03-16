@@ -1,0 +1,92 @@
+// ======================================================================= //
+//   SCREEN STYLES FOR ALL BROWSERS
+//
+//   Requires:
+//   Imported throughout this file
+// ======================================================================= //
+
+
+// ----------------------------------------------------------------------- //
+//   CSS RESET + SASS VARIABLES + UTILITIES
+// ----------------------------------------------------------------------- //
+
+@import partials/reset
+@import partials/base
+@import partials/utilities
+
+
+// ----------------------------------------------------------------------- //
+//   LAYOUTS
+// ----------------------------------------------------------------------- //
+
+body
+  padding: 0
+  margin: 0
+  width: auto
+  background-color: #151515
+  font-family: $font_family
+
+#container
+  padding: 19px 20px
+  margin: 0 auto
+  width: 400px
+
+
+// ----------------------------------------------------------------------- //
+//   HEADER
+// ----------------------------------------------------------------------- //
+
+header
+  h1
+    padding: 0
+    margin: 50px 0 70px 0
+    font-size: 144px
+    line-height: 120px
+    font-weight: 900
+    text-transform: uppercase
+    text-shadow: 3px 3px #252525
+    color: $light_font_color
+
+
+// ----------------------------------------------------------------------- //
+//   MAIN
+// ----------------------------------------------------------------------- //
+
+section#main
+  a
+    display: block
+    color: $dark_font_color
+    text-decoration: none
+    p
+      padding: 0
+      margin: 0 0 14px 0
+      font-size: 18px
+      line-height: 24px
+      font-weight: 300
+      color: $dark_font_color
+      span
+        border-bottom: #777 1px dotted
+    &:hover p span, &:active p span
+      color: $light_font_color
+
+
+// ----------------------------------------------------------------------- //
+//   MOBILE STYLES
+// ----------------------------------------------------------------------- //
+
+@media screen and (max-width: 480px)
+  #container
+    width: 280px
+
+  header
+    h1
+      margin: 0 0 50px 0
+      font-size: 96px
+      line-height: 80px
+
+  section#main
+    a, a p
+      color: #eee
+    a p
+      font-size: 16px
+      line-height: 20px
