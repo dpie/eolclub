@@ -1,0 +1,38 @@
+// ======================================================================= //
+//   STANDARD AND CUSTOM MIXINS
+//
+//   Requires:
+//   @import partials/base
+// ======================================================================= //
+
+
+// ----------------------------------------------------------------------- //
+//   FLOAT FIXIN' MIXINS
+// ----------------------------------------------------------------------- //
+
+// Self-clear floats for competent web browsers. Also, IE7.
+=group
+  // Standard float clearing helper
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  // IE7 float clearing helper
+  *:first-child+html &
+    min-height: 1px
+
+
+// ----------------------------------------------------------------------- //
+//   FONTS
+// ----------------------------------------------------------------------- //
+
+=font_styles($font_size, $line_height: '', $color: '', $font_weight: '')
+  font-size: $font_size
+  @if $line_height != ''
+    line-height: $line_height
+  @if $color != ''
+    color: $color
+  @if $font_weight != ''
+    font-weight: $font_weight
