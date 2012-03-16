@@ -12,7 +12,7 @@ with other local developers to a backdrop of electronic music.
 
 == Convert Sass to CSS
 
-$ sass --watch app/stylesheets:public/stylesheets --style expanded
+$ sass --watch app/stylesheets:stylesheets --style expanded
 
 
 == Commit to GitHub Pages
