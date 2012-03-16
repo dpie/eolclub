@@ -52,6 +52,7 @@ body {
   margin: 0;
   width: auto;
   background-color: #151515;
+  font-weight: 300;
   font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -77,7 +78,6 @@ section#main p {
   font-size: 18px;
   line-height: 24px;
   color: #bbbbbb;
-  font-weight: 300;
 }
 section#main p a {
   border-bottom: #777777 1px dotted;
