@@ -18,3 +18,9 @@ $ sass --watch app/stylesheets:stylesheets --style expanded
 == Commit to GitHub Pages
 
 git push origin master:gh-pages
+
+
+== Meetup Dates
+
+Monday March 26th, 2012
+Monday April 30th, 2012
