@@ -1,0 +1,5 @@
+===== feat_1_three_column_layout (04/08/2013) =====
+
+# Update gems: Bundler 1.2.5, Sass 3.2.7
+bundle install
+gem cleanup

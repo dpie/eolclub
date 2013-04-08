@@ -1,9 +1,5 @@
-# Bundler 1.1.1
-
-# 'bundle check'   to list missing gems
-# 'bundle install' to add initial gems
-# 'bundle update'  to add gems after updating Gemfile
-
+# Using Bundler 1.2.x
 source 'http://rubygems.org'
 
-gem 'sass', '3.1.15'  # stylesheets
+gem 'bundler', '1.2.5'  # gem management
+gem 'sass',    '3.2.7'  # stylesheets
