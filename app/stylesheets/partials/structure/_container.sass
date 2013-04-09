@@ -1,0 +1,36 @@
+// ======================================================================= //
+//   CONTAINER
+//
+//   Requires:
+//   @import partials/base
+//   @import partials/utilities
+// ======================================================================= //
+
+
+// ----------------------------------------------------------------------- //
+//   STRUCTURE
+// ----------------------------------------------------------------------- //
+
+#container
+  +group
+  padding: $container-gutter
+  margin: 0 auto
+
+  // Do not assign min-width AND max-width, as they can conflict and
+  // make scrollbars appear around the responsive design breakpoints.
+  +respond_to(mobile)
+    // 320px - 599px
+    padding: ($container-gutter / 2)
+    max-width: $width-tablet - $container-gutter - 1
+
+    // Prevent Mobile Safari (not desktop!) from resizing text.
+    -webkit-text-size-adjust: none
+
+  +respond_to(tablet)
+    // 600px - 799px
+    max-width: $width-widescreen - ($container-gutter * 2) - 1
+    -webkit-text-size-adjust: none
+
+  +respond_to(widescreen)
+    // 800px - 1200px
+    max-width: $width-maximum - ($container-gutter * 2)
