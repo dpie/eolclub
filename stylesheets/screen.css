@@ -97,10 +97,12 @@ section#main p {
 }
 section#main p a {
   border-bottom: #777777 1px dotted;
+}
+section#main p a {
   text-decoration: none;
   color: #bbbbbb;
 }
-section#main p a:hover, section#main p a:active {
+section#main p a:hover {
   color: white;
 }
 
@@ -120,7 +122,11 @@ section#main p a:hover, section#main p a:active {
     line-height: 20px;
     color: white;
   }
-  section#main p a, section#main p a:hover, section#main p a:active {
+  section#main p a {
+    text-decoration: none;
+    color: white;
+  }
+  section#main p a:hover {
     color: white;
   }
 }

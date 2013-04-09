@@ -54,11 +54,8 @@ section#main
     margin-bottom: 16px
     +font_styles(18px, 24px, $dark_font_color)
     a
+      +link_styles($dark_font_color, $light_font_color)
       border-bottom: #777 1px dotted
-      text-decoration: none
-      color: $dark_font_color
-      &:hover, &:active
-        color: $light_font_color
 
 
 // ----------------------------------------------------------------------- //
@@ -77,5 +74,5 @@ section#main
   section#main
     p
       +font_styles(16px, 20px, $light_font_color)
-      a, a:hover, a:active
-        color: $light_font_color
+      a
+        +link_styles($light_font_color, $light_font_color)

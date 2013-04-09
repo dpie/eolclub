@@ -36,3 +36,14 @@
     color: $color
   @if $font_weight != ''
     font-weight: $font_weight
+
+=link_styles($color, $hover_color: '', $underline: false)
+  &
+    @if $underline == true
+      text-decoration: underline
+    @else
+      text-decoration: none
+    color: $color
+  &:hover
+    @if $hover_color != ''
+      color: $hover_color
