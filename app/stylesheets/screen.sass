@@ -44,6 +44,10 @@ header
     text-transform: uppercase
     text-shadow: 3px 3px #252525
 
+    +respond_to(mobile-portrait)
+      margin: 0 0 50px 0
+      +font_styles(96px, 80px)
+
 
 // ----------------------------------------------------------------------- //
 //   MAIN
@@ -53,26 +57,13 @@ section#main
   p
     margin-bottom: 16px
     +font_styles(18px, 24px, $dark_font_color)
-    a
-      +link_styles($dark_font_color, $light_font_color)
-      border-bottom: #777 1px dotted
 
-
-// ----------------------------------------------------------------------- //
-//   MOBILE STYLES
-// ----------------------------------------------------------------------- //
-
-@media screen and (max-width: 480px)
-  #container
-    width: 280px
-
-  header
-    h1
-      margin: 0 0 50px 0
-      +font_styles(96px, 80px)
-
-  section#main
-    p
+    +respond_to(mobile-portrait)
       +font_styles(16px, 20px, $light_font_color)
-      a
+
+    a
+      border-bottom: #777 1px dotted
+      +link_styles($dark_font_color, $light_font_color)
+
+      +respond_to(mobile-portrait)
         +link_styles($light_font_color, $light_font_color)

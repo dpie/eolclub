@@ -88,12 +88,26 @@ header h1 {
   text-transform: uppercase;
   text-shadow: 3px 3px #252525;
 }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  header h1 {
+    margin: 0 0 50px 0;
+    font-size: 96px;
+    line-height: 80px;
+  }
+}
 
 section#main p {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 24px;
   color: #bbbbbb;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  section#main p {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
 }
 section#main p a {
   border-bottom: #777777 1px dotted;
@@ -105,23 +119,7 @@ section#main p a {
 section#main p a:hover {
   color: white;
 }
-
-@media screen and (max-width: 480px) {
-  #container {
-    width: 280px;
-  }
-
-  header h1 {
-    margin: 0 0 50px 0;
-    font-size: 96px;
-    line-height: 80px;
-  }
-
-  section#main p {
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-  }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
   section#main p a {
     text-decoration: none;
     color: white;
