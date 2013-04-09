@@ -25,6 +25,38 @@
 
 
 // ----------------------------------------------------------------------- //
+//   MEDIA QUERIES FOR RESPONSIVE DESIGN
+// ----------------------------------------------------------------------- //
+
+// All $width- variables are defined in partials/base.
+// Single media type: +respond_to(mobile)
+// Multi media types: +respond_to((mobile, tablet))
+=respond_to($media_types)
+
+  @each $media in $media_types
+
+    @if $media == mobile-portrait
+      // 320px - 479px
+      @media only screen and (min-width: $width-mobile-portrait) and (max-width: $width-mobile-landscape - 1)
+        @content
+
+    @else if $media == mobile
+      // 320px - 599px
+      @media only screen and (min-width: $width-mobile-portrait) and (max-width: $width-tablet - 1)
+        @content
+
+    @else if $media == tablet
+      // 600px - 799px
+      @media only screen and (min-width: $width-tablet) and (max-width: $width-widescreen - 1)
+        @content
+
+    @else if $media == widescreen
+      // >= 800px
+      @media only screen and (min-width: $width-widescreen)
+        @content
+
+
+// ----------------------------------------------------------------------- //
 //   FONTS
 // ----------------------------------------------------------------------- //
 
