@@ -34,3 +34,24 @@ v9.0 Monday March 4th, 2013 - 7 attendees
 v10.0 Monday April 8th, 2013 - 8 attendees
 v11.0 Monday May 13th, 2013 - 8 attendees
 v12.0 Monday June 3rd, 2013
+
+
+== iCalendar event entry format
+
+The SEQUENCE and LAST-MODIFIED properties are used when an event is modified
+after publication.  When an event is first published, SEQUENCE should have a
+value of 0 and LAST-MODIFIED is optional.  When revising an event, SEQUENCE
+should be incremented, and LAST-MODIFIED should be updated to reflect the
+timestamp of the revision.
+
+iCalendar is defined in [RFC 5545](http://tools.ietf.org/html/rfc5545).
+
+    BEGIN:VEVENT
+    UID:org.eolclub.ics.events.v11.0
+    DTSTAMP:20130430T033000Z
+    LAST-MODIFIED:20130502T033000Z
+    SEQUENCE:1
+    DTSTART;TZID=EST5EDT:20130513T180000
+    DTEND;TZID=EST5EDT:20130513T230000
+    SUMMARY:EOL Club v11.0
+    END:VEVENT
